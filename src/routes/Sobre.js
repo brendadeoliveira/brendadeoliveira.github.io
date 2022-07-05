@@ -12,7 +12,7 @@ const Sobre = () => {
           <img src={autora} alt="Foto de Leticia Chokr" className='autora-s'/>
           <h2>Leticia Chokr</h2>
           <p>Natural do Paraná, Letícia começou escrevendo histórias no Facebook e nunca mais parou. Hoje estudante de Letras, já publicou três livros na Amazon e está trabalhando em outros. </p>
-          <p>Natural do Paraná, Letícia começou escrevendo histórias no Facebook e nunca mais parou. Hoje estudante de Letras, já publicou três livros na Amazon e está trabalhando em outros. </p>
+          <p>Mais informacoes, Letícia começou escrevendo histórias no Facebook e nunca mais parou. Hoje estudante de Letras, já publicou três livros na Amazon e está trabalhando em outros. </p>
           <p>Natural do Paraná, Letícia começou escrevendo histórias no Facebook e nunca mais parou. Hoje estudante de Letras, já publicou três livros na Amazon e está trabalhando em outros. </p>
           <button className='btn'>Conheça os Livros</button>
         </div>
