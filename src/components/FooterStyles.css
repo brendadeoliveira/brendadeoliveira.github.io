@@ -1,0 +1,100 @@
+.footer{
+    width: 100%;
+    background: #E0115F;
+    padding: 2em 2em 0 2em;
+    color: #fff;
+}
+
+.footer-container{
+    max-width: 100vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.footer .left{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.footer .right{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto;
+}
+
+.right .socials{
+    margin-bottom: auto;
+}
+
+.footer-t{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+    padding: 1em 0;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.info, .mensagem{
+    width: 98%;
+    margin-bottom: .75em;
+    padding: .25em;
+    border: 2px solid #E0115F;
+    font-family: 'Outfit';
+    color: #000;
+
+}
+
+.info{
+    height: 30px;
+    border-radius: .75em;
+}
+
+.mensagem{
+    border-radius: 1em;
+}
+
+.right p{
+    font-size: 25px;
+    font-weight: 200;
+    padding-bottom: 1.25em;
+}
+
+.footer .direitos{
+    font-size: 12px;
+    padding: .75em 0; 
+}
+@media screen and (min-width: 740px) {
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6em;
+        padding: 0 4em;
+    }
+
+    .footer-t{
+        font-size: 45px;
+        font-weight: 300;
+    }
+    .right p{
+        font-size: 28px;
+        padding: 1em 0;
+    }
+
+    .footer .direitos{
+        font-size: 16px;
+    }
+}
+

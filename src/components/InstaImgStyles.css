@@ -1,0 +1,22 @@
+.insta-grid{
+    width: 80vw;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+}
+
+
+.insta-grid img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (min-width: 740px) {
+    .insta-grid{
+        width: 36vw;
+        margin: 0;
+    }
+}

@@ -1,13 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;800&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #fff;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn {
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: transparent;
+  color: #E0115F;
+  border: 2px solid #E0115F;
+}
+
+.btn-light{
+  padding: 4px 10px;
+  font-size: 14px;
+  border-radius: .75em;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-light:hover{
+  background: #fff;
+  color: #E0115F;
+}
+
+.btn:hover{
+  background: #E0115F;
+  color: #fff;
+  border: 1px solid;
+}
+
+
+/*Home page */
+
+.autora-container{
+  display: block;
+  text-align: center;
+}
+.autora{
+  width: 16em;
+  margin-top: 8em;
+  border-radius: 8em;
+}
+
+.titulo {
+  color: #000;
+  padding: .75em;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.apresentacao{
+  padding: 0 2em 2em 2em;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.socials{
+  padding: 2em 0;
+}
+
+.lancamentos{
+  margin-bottom: 4em;
+}
+
+.lancamentos h2{
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  padding: 1em 1em 1.5em 1em;
+}
+
+.book-img{
+  width: 16em;
+  border-radius: 1em;
+}
+
+.lancamentos .livros {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.lancamentos aside{
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(224, 17, 95, .8);
+  padding: .75em;
+  text-shadow: 2px 2px rgba(68, 65, 65, 0.2);
+
+}
+
+
+/* Sobre a Autora*/
+.sobre-container, .livros-container{
+  display: block;
+  text-align: center;
+  padding: 0 1.5em 2em 1.5em;
+}
+
+.titulo-s, .titulo-l{
+  padding: 4em 0 1em 0;
+  font-weight: 200;
+  font-size: 35px;
+  text-transform: uppercase;
+
+}
+.autora-s {
+  width: 16em;
+  border-radius: 8em;
+}
+
+.sobre-container h2{
+  padding: 1em;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.sobre-container p{
+  padding-bottom: 1.5em;
+}
+
+
+
+
+/*livros*/
+.livro{
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+.capa-livro{
+  width: 10em;
+  border-radius: .5em;
+  box-shadow: 2px 2px 8px rgba(224, 17, 95, .6);
+}
+
+.descricao-livro h2{
+  font-weight: 400;
+  padding: .75em 0;
+}
+
+.descricao-livro p{
+  line-height: 25px;
+  padding-bottom: .5em
+}
+
+.descricao-livro b{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+@media screen and (min-width: 525px) {
+  .sobre-container{
+    padding: 0 5em 4em 5em;
+  }
+
+  .sobre-container h2{
+    font-weight: 200;
+    font-size: 40px;
+  }
+  .sobre-container p{
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  /*livros*/ 
+  .capa-livro{
+    width: 16em;
+    border-radius: .75em;
+    box-shadow: 4px 4px 12px rgba(224, 17, 95, .6);
+  }
+
+  .descricao-livro{
+    padding: 0 2em;
+  }
+}
+
+
+@media screen and (min-width: 831px) {
+  .lancamentos{
+    display: block;
+    text-align: center;
+  }
+
+  .lancamentos .livros {
+    padding: 0 1em;
+  }
+
+  /*sobre a autora*/
+
+  .titulo-s, .titulo-l{
+    padding-top: 2.5em;
+    font-size: 70px;
+  }
+  .autora-s{
+    width: 30em;
+  }
+}
+
+@media screen and (min-width: 865px){
+  .autora {
+    width: 20em;
+    border-radius: 10em;
+    margin-top: 4em;
+  }
+  .autora-container {
+    display: flex;
+    justify-items: center;
+    padding: 2em;
+  }
+  
+  .autora-info{
+    margin-top: 4em;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .autora-container{
+    padding: 2em 4em;
+  }
+
+  /*livros*/
+
+  .livro{
+    padding: 5em 4em;
+    display: inline-flex;
+    gap: 2em;
+    
+    text-align: left
+  }
+
+  .descricao-livro h2{
+    font-size: 40px;
+    font-weight: 200;
+    padding-top: 0;
+  }
+
+  .descricao-livro p{
+    font-size: 18px;
+    padding-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .autora-container{
+    padding: 4em 8em;
+  }
+
+  .titulo{
+    font-size: 60px;
+  }
+
+  .apresentacao{
+    font-size: 25px;
+  }
+
+  .autora{
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .lancamentos{
+    margin-bottom: 6em;
+  }
+  .lancamentos h2{
+    font-size: 50px;
+    font-weight: 200;
+    padding: 2em 0 1em 0;
+  }
+
+  /*sobre a autora*/
+
+  
+  .autora-s{
+    width: 36em;
+    border-radius: 4em;
+  }
+  .sobre-container h2{
+    font-size: 60px;
+  }
+  .sobre-container p{
+    padding-left: 4em;
+    padding-right: 4em;
+    font-size: 26px;
+  }
+}
+
